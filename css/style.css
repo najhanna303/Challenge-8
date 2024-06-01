@@ -1,0 +1,286 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  font-family: "Ubuntu", sans-serif;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f0f0;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color:white;
+  width: fit-content
+}
+
+.right-container{
+  background-color:white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.goback-btn{
+ border: none;
+ background-color:white;
+}
+.goback-btn:hover{
+  color: hsl(213, 96%, 18%)
+}
+
+.card-text {
+  margin-bottom: 0; /* Remove bottom margin from the <p> element */
+}
+
+.price{
+  margin-top: 0.5rem; /* Adjust the top margin of the <span> element */
+}
+
+.card-container:hover{
+  cursor:pointer;
+  border: 2px solid  hsl(243, 100%, 62%);
+}
+.card-container.selected {
+  border: 2px solid  hsl(243, 100%, 62%); 
+}
+
+.next-step-button:disabled {
+  background-color: #ccc; /* Disabled button color */
+  cursor: not-allowed;
+}
+
+
+.checkbox-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.checkbox-box {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
+  position: relative;
+  width: 100%;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease;
+}
+
+.checkbox-box:hover {
+  border-color: hsl(243, 100%, 62%);
+}
+
+.checkbox-box:focus {
+  border-color: hsl(243, 100%, 62%);
+}
+
+.checkbox-box input[type="checkbox"] {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  margin: 0;
+}
+
+.checkbox-box label {
+  display: flex;
+  flex-direction: column;
+  margin-left: 30px;
+  width: 100%;
+}
+
+.addon-title {
+  font-weight: bold;
+  color: hsl(213, 96%, 18%);
+}
+
+.addon-description {
+  font-size: 0.9em;
+  color: #666;
+}
+
+.addon-price {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-weight: bold;
+  color: hsl(243, 100%, 62%);
+}
+
+
+#step-5 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+#step-5 svg {
+  margin-bottom: 20px;
+}
+
+#step-5 h1 {
+  margin-top: 20px;
+  font-size: 24px;
+  color: #333;
+}
+
+#step-5 p {
+  font-size: 16px;
+  color: #666;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+
+.step-indicator {
+  background-image: url('data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%22274%22%20height%3D%22568%22%20fill%3D%22none%22%20viewBox%3D%220%200%20274%20568%22%3E%3Crect%20width%3D%22274%22%20height%3D%22568%22%20fill%3D%22%23483EFF%22%20rx%3D%2210%22/%3E%3Cmask%20id%3D%22a%22%20width%3D%22274%22%20height%3D%22568%22%20x%3D%220%22%20y%3D%220%22%20maskUnits%3D%22userSpaceOnUse%22%20style%3D%22mask-type%3Aalpha%22%3E%3Crect%20width%3D%22274%22%20height%3D%22568%22%20fill%3D%22%23fff%22%20rx%3D%2210%22/%3E%3C/mask%3E%3Cg%20mask%3D%22url(%23a)%22%3E%3Cpath%20fill%3D%22%236259FF%22%20fill-rule%3D%22evenodd%22%20d%3D%22M-34.692%20543.101C3.247%20632.538%20168.767%20685.017%20211.96%20612.52c43.194-72.497-66.099-85.653-104.735-160.569-38.635-74.916-68.657-121.674-124.482-104.607-55.824%2017.068-55.375%20106.32-17.436%20195.757Z%22%20clip-rule%3D%22evenodd%22/%3E%3Cpath%20fill%3D%22%23F9818E%22%20fill-rule%3D%22evenodd%22%20d%3D%22M233.095%20601.153c60.679-28.278%2092.839-143.526%2041.875-171.528-50.965-28.003-57.397%2047.579-108.059%2075.987-50.662%2028.408-82.14%2050.207-69.044%2088.241%2013.096%2038.034%2074.549%2035.578%20135.228%207.3Z%22%20clip-rule%3D%22evenodd%22/%3E%3Cpath%20stroke%3D%22%23fff%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22bevel%22%20stroke-width%3D%225%22%20d%3D%22m165.305%20469.097%2010.607-10.806M209.461%20474.581l-12.506-10.503M187.56%20488.991l-6.908%2014.798%22/%3E%3Cpath%20fill%3D%22%23FFAF7E%22%20d%3D%22M.305%20546.891c37.003%200%2067-29.997%2067-67s-29.997-67-67-67-67%2029.997-67%2067%2029.997%2067%2067%2067Z%22/%3E%3C/g%3E%3C/svg%3E');
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+
+.summary-box {
+  background: #f8f9fa;
+  border: 1px solid #e2e6ea;
+  border-radius: 10px;
+  padding: 20px;
+  width: 100%;
+  max-width: 500px;
+  margin: auto;
+}
+
+
+#plan-name, #plan-price{
+  color: hsl(213, 96%, 18%);
+  font-weight: bold;
+}
+
+.total-price{
+  font-size: larger;
+  color: hsl(243, 100%, 62%);
+  font-weight: bold 
+}
+
+.step {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.circle {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  margin-right: 15px;
+  border: 1px solid white; 
+}
+.step.active .circle {
+  background-color:  hsl(206, 94%, 87%);
+  color:   hsl(213, 96%, 18%)
+}
+
+
+.text {
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+
+.step-label {
+  font-size: 14px;
+  font-weight: bold;
+  color: #6c757d;
+}
+.label {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+
+.card-body {
+  padding: 20px;
+}
+.form-group {
+  margin-bottom: 10px; 
+}
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  text-align: left;
+}
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.form-group input:focus{
+  border: 1px solid  hsl(243, 100%, 62%);
+  outline: none;
+  box-shadow: none;
+}
+.btn-container {
+  text-align: right;  
+}
+.btn {
+  padding: 10px 20px;
+  background-color: hsl(213, 96%, 18%);
+  color:white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 10px;  
+}
+.btn:hover {
+  background-color: hsl(213, 96%, 18%);
+  color: white
+
+}
+
+.plan-summary::after {
+  content: '';
+  display: block;
+  width: 100%; 
+  height: 1px; 
+  background-color: #ccc; 
+  margin-top: 5px;
+}
+
+.title, .labels{
+  color:   hsl(213, 96%, 18%)
+}
+.labels {
+  font-size: 1rem;
+}
+
+.title{
+  font-size: 2rem;
+}
+.text-black-50 {
+  color: rgba(0, 0, 0, 0.5);
+  margin-bottom: 15px;  
+  text-align: left; 
+}
+
+.card-container {
+  margin-right: 10px;
+}
